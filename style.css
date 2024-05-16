@@ -1,0 +1,47 @@
+/* .image-before{
+  height: 100px;
+  width: 100px;
+}
+.image-after{
+  height: 100px;
+  width: 100px;
+} */
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+main{
+  display: grid;
+  place-items: center;
+  min-height: 100vh
+}
+
+.containerP{
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position:50%;
+}
+
+.image-container{
+  max-width: 800px;
+  max-height:90vh ;
+  aspect-ratio: 16/9;
+  
+}
+
+.slider-image{
+
+}
