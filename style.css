@@ -1,12 +1,3 @@
-/* .image-before{
-  height: 100px;
-  width: 100px;
-}
-.image-after{
-  height: 100px;
-  width: 100px;
-} */
-
 *,
 *::after,
 *::before{
@@ -21,6 +12,7 @@ img{
 }
 
 main{
+  background-color: rgb(153, 238, 190); /*just for now*/
   display: grid;
   place-items: center;
   min-height: 100vh
@@ -38,14 +30,14 @@ main{
 .image-container{
   max-width: 800px;
   max-height:90vh ;
-  aspect-ratio: 16/19;
+  aspect-ratio: 16/9;
   
 }
 
 .slider-image{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   object-position: left;
 }
 
@@ -74,7 +66,7 @@ main{
 .slider-line{
   position: absolute;
   inset: 0;
-  width: 2rem;
+  width: .1rem; /*2 rem*/
   height: 100%;
   background-color: #fff;
   z-index: 10;
@@ -87,7 +79,7 @@ main{
   position: absolute;
   background-color: #fff;
   color: black;
-  padding: .5rem;
+  padding: .2rem; /*.5rem*/
   border-radius: 100vw;
   display: grid;
   place-items: center;
