@@ -38,7 +38,7 @@ main{
 .image-container{
   max-width: 800px;
   max-height:90vh ;
-  aspect-ratio: 1/1;
+  aspect-ratio: 16/19;
   
 }
 
@@ -50,7 +50,7 @@ main{
 }
 
 .image-before{
-  /* position: absolute;  */
+  position: absolute; 
   inset: 0;
   width: var(--position);
   
@@ -64,6 +64,12 @@ main{
   width: 100%;
   height: 100%;
 }
+
+.slider:focus-visible ~ .slider-button{
+  outline: 5px solid black;
+  outline-offset: 3px;
+}
+
 
 .slider-line{
   position: absolute;
