@@ -45,7 +45,7 @@
 }
 
 /* button */
-.button {
+button {
 	padding: 16px 80px;
 	display: flex;
 	justify-content: center;
@@ -68,7 +68,7 @@
 	transition: background-color 0.8s ease;
 }
 
-.button::after {
+button::after {
 	content: "";
 	width: 100%;
 	z-index: -20;
@@ -81,11 +81,11 @@
 	bottom: 0;
 	transition: all 0.5s ease;
 }
-.info button:hover {
+.button:hover {
 	color: white;
 	background-color: white;
 }
-.info button:hover::after {
+button:hover::after {
 	left: 0;
 }
 
@@ -150,5 +150,30 @@ main{
 }
 
 
- 
- 
+.slider-line{
+  position: absolute;
+  inset: 0;
+  width: .1rem; /*2 rem*/
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.slider-button{
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: .2rem; /*.5rem*/
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  z-index: 100;
+  box-shadow: 1px 1px 1px hsl( 0,  50%,  2%, .5);
+}
