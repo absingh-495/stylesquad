@@ -44,6 +44,51 @@
   
 }
 
+/* button */
+.button {
+	padding: 16px 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	border: 1px solid black;
+	color: black;
+	background-color: #ffcc00;
+	border-radius: 14px;
+	font-size: 18px;
+	font-family: "Syne", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	cursor: pointer;
+	position: relative;
+	z-index: 80;
+	overflow: hidden;
+	transition: color 5.8s ease;
+	transition: background-color 0.8s ease;
+}
+
+.button::after {
+	content: "";
+	width: 100%;
+	z-index: -20;
+	height: 100%;
+	border: 1px solid black;
+	background-color: black;
+	font-weight: 700;
+	position: absolute;
+	left: -110%;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+.info button:hover {
+	color: white;
+	background-color: white;
+}
+.info button:hover::after {
+	left: 0;
+}
+
 img{
   display: block;
   max-width: 100%;
@@ -105,30 +150,5 @@ main{
 }
 
 
-.slider-line{
-  position: absolute;
-  inset: 0;
-  width: .1rem; /*2 rem*/
-  height: 100%;
-  background-color: #fff;
-  z-index: 10;
-  left: var(--position);
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
-.slider-button{
-  position: absolute;
-  background-color: #fff;
-  color: black;
-  padding: .2rem; /*.5rem*/
-  border-radius: 100vw;
-  display: grid;
-  place-items: center;
-  top: 50%;
-  left: var(--position);
-  transform: translate(-50%,-50%);
-  pointer-events: none;
-  z-index: 100;
-  box-shadow: 1px 1px 1px hsl( 0,  50%,  2%, .5);
-}
+ 
+ 
