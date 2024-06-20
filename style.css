@@ -8,6 +8,7 @@
 
 .vessel{
   display: flex;
+
 }
 
 .right{
@@ -112,7 +113,7 @@ main{
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
-  --position:50%;
+  --position:100%; /* 50% */
  }
 
 .image-container{
@@ -132,7 +133,7 @@ main{
 .image-before{
   position: absolute; 
   inset: 0;
-  /* width: var(--position); */
+  width: var(--position);
   
 }
 
