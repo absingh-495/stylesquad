@@ -11,17 +11,36 @@
 }
 
 .right{
-  display: flex;
+  display: block;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 50vw;
   height: 100vh;
   background-color: rgb(215, 215, 145);
   position: relative;
-  
 }
+ 
+.right p{
+  display: flex;
+  text-align: center;
+  /* background-color: red; */
+  width: 35%;
+  height: 20%;
+  align-items: center; 
+}
+
 .left{
   width: 50vw;
   height: 100vh;
   background-color: #f44336;
+  
+}
+
+.engine-img{
+  object-fit: contain;
+  object-position:right;
+  width: 50%;
+  height: 100%;
   
 }
 
