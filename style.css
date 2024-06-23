@@ -161,11 +161,7 @@
 	left: 0;
 }
 
-img{
-  display: block;
-  max-width: 100%;
-}
-
+ 
 main{
   position: absolute;
   top: 50%;
@@ -209,9 +205,7 @@ main{
   position: absolute; 
   inset: 0;
   width: var(--postion);
-  box-shadow: 1px 1px 1px hsl( 0,  50%,  2%, .5);
-
-  
+  box-shadow: 1px 1px 1px hsl( 0,  50%,  2%, .5);  
 }
 
 .slider{
@@ -221,7 +215,7 @@ main{
   width: 100%;
   height: 100%; 
   cursor: pointer;
-  opacity: ;
+  opacity:0 ;
   /* width: var(--position); */
   height: 100%;
 }
