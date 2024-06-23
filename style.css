@@ -60,6 +60,7 @@
   color: #f44336;
   background: transparent;
   font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
 
 }
@@ -207,7 +208,7 @@ main{
   height: 100%;
   position: absolute; 
   inset: 0;
-  /* width: var(--postion); */
+  width: var(--postion);
   
 }
 
