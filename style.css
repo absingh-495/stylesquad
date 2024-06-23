@@ -175,6 +175,7 @@ main{
   display: grid;
   place-items: center;
   min-height: 100vh;
+  width: 100vw;   /* for now */
 }
 
 .container{
@@ -208,6 +209,8 @@ main{
   position: absolute; 
   inset: 0;
   width: var(--postion);
+  box-shadow: 1px 1px 1px hsl( 0,  50%,  2%, .5);
+
   
 }
 
@@ -218,8 +221,8 @@ main{
   width: 100%;
   height: 100%; 
   cursor: pointer;
-  opacity: 0;
-  width: var(--position);
+  opacity: ;
+  /* width: var(--position); */
   height: 100%;
 }
 
@@ -232,7 +235,7 @@ main{
 .slider-line{
   position: absolute;
   inset: 0;
-  width: .1rem; /*2 rem*/
+  width: .2rem; /*2 rem*/
   height: 100%;
   background-color: #fff;
   z-index: 10;
