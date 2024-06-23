@@ -3,44 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Before/after</title>
+  <title>Seond section</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <div class="vessel">
-  <div class="left">
-    <h2>Lamborghini</h2>
-    <h1>Huracan EVO</h1>
-    <p>power(CV)/power(KW)  </p>
-    <button>
-      <p>Explore Now</p>
-    </button>
-   <!-- <h1>left</h1> -->
-  </div>
-  <div class="right">
-   <!-- <h1>right</h1> -->
-    <h4>FEEL THE <br> ENGINE</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quisquam voluptatibus, alias error nam minus assumenda, delectus consequatur perspiciatis esse quasi modi sit? Obcaecati?</p>
-    <!-- <img class="engine-img" src="images/engine.png" alt="image"> -->
+  <div class="main-container">
 
-  </div>
-</div>
-  <main>
-    <div class="container">
-      <div class="image-container">
-        <img class="image-before slider-image" src="images/Revuelto-1.png" alt="before-image">
+    <!-- left -->
+    <div class="left">
+      <div class="left-content">
+      <h2>Lamborghini</h2>
+      <h1>Huracan EVO</h1>
+      <p>power(CV)/power(KW) <br>
+      640cv/470kw <br>
+      max. speed 
+      >325 km/h <br>
+      0-100 km/h
+      2.9s</p>
+      <button id="explore-btn">
+        <p>Explore Now</p>
+      </button>
+     <!-- <h1>left</h1> -->
+    </div>  <!-- left-content -->
+    </div> 
 
-        <img class="image-after slider-image" src="images/Revuelto-2.png" alt="after-image">
-      </div>
+    <!-- right -->
 
-      <input type="range" min="0" max="100" value="50" class="slider" aria-label="percentage of before photo shown"/>
+    <div class="right">
+      <!-- <h1>right</h1> -->
+       <div class="right-content">
+       <h5>FEEL THE <br> <span> <h2>ENGINE</h2> </span> </h5>
+       <!-- <img class="engine-img" src="images/engine.png" alt="image"> -->
+
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quisquam voluptatibus, alias error nam minus assumenda, delectus  </p>
+
+       <button id="read-more"> read more</button>
       
-      <div class="slider-line"></div>
-      <div class="slider-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg></div>
+   
+      </div> <!-- right -->
+     </div> <!-- right-content -->
 
-    </div>
-  </main>
+     <main>
+      <div class="container">
+        <div class="image-container">
+          <img class="image-before slider-image" src="images/Revuelto-1.png" alt="before-image">
+  
+          <img class="image-after slider-image" src="images/Revuelto-2.png" alt="after-image">
+        </div>
+  
+        <input type="range" min="0" max="100" value="50" class="slider" aria-label="percentage of before photo shown"/>
+        
+        <div class="slider-line"></div>
+        <div class="slider-button" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg></div>
+  
+      </div>
+    </main>
+  
+    <script src="app.js"></script>
 
-  <script src="app.js"></script>
+  </div> <!-- main-container -->
+  
 </body>
 </html>
